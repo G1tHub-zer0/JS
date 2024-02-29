@@ -30,4 +30,3 @@ console.log(test.includes("tao"));
 console.log(test.includes("Khang"));
 console.log(test.includes("0"));
 console.log(test.indexOf("0"));
-console.log(test.lastIndexOf("0"));

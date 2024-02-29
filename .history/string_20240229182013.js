@@ -17,17 +17,8 @@ console.log(newString1);
 
 console.log(newString.length);
 //index: vị trí của từng kí tự (tính cả khoảng trắng)
-const test = "Tao la zer0 0605";
+const test = "Tao la zer0";
 console.log(test.split(" "));
 console.log(test.split(""));
 console.log(test.split("/"));
 console.log(test.toLowerCase());
-console.log(test.toUpperCase());
-console.log(test.startsWith("t"));
-console.log(test.startsWith("T"));
-console.log(test.endsWith("0"));
-console.log(test.includes("tao"));
-console.log(test.includes("Khang"));
-console.log(test.includes("0"));
-console.log(test.indexOf("0"));
-console.log(test.lastIndexOf("0"));
