@@ -6,8 +6,7 @@
 const name = "Khang";
 const job = "student";
 // const newString = "My name is " + name + " I am a " + job;
-const newString =
-  "My name is ${name} and I am ${job}";
+const newString = "My name is ${name} and I am ${job}";
 console.log(newString);
 //Sử dụng "" hoặc '' sẽ không dùng được ${variable}
 //Kết quả hiện ra là My name is ${name} and I am ${job}
@@ -48,19 +47,3 @@ console.log(test.substring(1, 6));
 //slices : Nếu start > end: Không đổi vị trí 2 dối số và trả về chuỗi rỗng
 console.log(test.substring(6, 1));
 console.log(test.slice(6, 1));
-//Loại bỏ khoảng trống 2 bên và đưa tất cả về in hoa, thay 0605 thành 0410 và repeat 2 lần
-console.log(
-  test
-    .trim()
-    .replace("0605", "0410")
-    .toUpperCase()
-    .repeat(2)
-);
-//để dẽ phân biệt các kết quả trên màn hình console: Dùng ${variable}
-console.log(
-  `Result: ${test
-    .trim()
-    .replace("0605", "0410")
-    .toUpperCase()
-    .repeat(2)}`
-);

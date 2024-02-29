@@ -6,8 +6,7 @@
 const name = "Khang";
 const job = "student";
 // const newString = "My name is " + name + " I am a " + job;
-const newString =
-  "My name is ${name} and I am ${job}";
+const newString = "My name is ${name} and I am ${job}";
 console.log(newString);
 //Sử dụng "" hoặc '' sẽ không dùng được ${variable}
 //Kết quả hiện ra là My name is ${name} and I am ${job}
@@ -55,12 +54,4 @@ console.log(
     .replace("0605", "0410")
     .toUpperCase()
     .repeat(2)
-);
-//để dẽ phân biệt các kết quả trên màn hình console: Dùng ${variable}
-console.log(
-  `Result: ${test
-    .trim()
-    .replace("0605", "0410")
-    .toUpperCase()
-    .repeat(2)}`
 );

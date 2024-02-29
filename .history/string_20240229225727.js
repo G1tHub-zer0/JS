@@ -56,7 +56,7 @@ console.log(
     .toUpperCase()
     .repeat(2)
 );
-//để dẽ phân biệt các kết quả trên màn hình console: Dùng ${variable}
+//để dẽ phân biệt các kết quả trên màn hình console
 console.log(
   `Result: ${test
     .trim()

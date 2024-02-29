@@ -56,11 +56,3 @@ console.log(
     .toUpperCase()
     .repeat(2)
 );
-//để dẽ phân biệt các kết quả trên màn hình console: Dùng ${variable}
-console.log(
-  `Result: ${test
-    .trim()
-    .replace("0605", "0410")
-    .toUpperCase()
-    .repeat(2)}`
-);
