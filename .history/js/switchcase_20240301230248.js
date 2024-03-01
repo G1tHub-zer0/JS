@@ -37,4 +37,3 @@ let message3 =
     ? "You are a teen"
     : "You are a child";
 console.log(message3);
-///
