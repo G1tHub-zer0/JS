@@ -19,14 +19,12 @@ if (!isRich) {
 }
 // "Save money"
 
-let a = 4;
+let a = 10;
 let b = 5;
-
 if (a > b) {
   console.log("a > b");
 } else if (a == b) {
   console.log("a = b");
-} else {
+} else (a < b) {
   console.log("a < b");
 }
-// "a < b"

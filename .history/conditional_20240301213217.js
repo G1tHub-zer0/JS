@@ -29,4 +29,3 @@ if (a > b) {
 } else {
   console.log("a < b");
 }
-// "a < b"
