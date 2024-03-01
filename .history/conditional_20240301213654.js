@@ -30,3 +30,7 @@ if (a > b) {
   console.log("a < b");
 }
 // "a < b"
+
+//prompt, confirm, alert
+//alert("Your web"); //Thông báo
+prompt("Vui long nhap vao ten cua ban");
