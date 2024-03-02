@@ -76,11 +76,3 @@ function sayHello2() {
   return sayHi();
 }
 sayHello2();
-
-function sayHello3(message) {
-  return function sayYourName(yourName) {
-    console.log(`${message} ${yourName}`);
-  };
-}
-let hello = sayHello3("Hello");
-hello("Khang"); // "Hello Khang"

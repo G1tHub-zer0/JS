@@ -78,9 +78,9 @@ function sayHello2() {
 sayHello2();
 
 function sayHello3(message) {
-  return function sayYourName(yourName) {
+  return sayYourName(yourName) {
     console.log(`${message} ${yourName}`);
-  };
+  }
 }
 let hello = sayHello3("Hello");
-hello("Khang"); // "Hello Khang"
+hello("Khang");

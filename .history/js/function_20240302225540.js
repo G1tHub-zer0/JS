@@ -44,43 +44,4 @@ function logMyName() {
   let myName1 = "Khag"; // function scope
 }
 console.log(myName); // "Khang"
-// console.log(myName1); // error not defined
-
-// block scope
-if (2 > 1) {
-  // const message = 'Hello';
-  let message = "Hello"; // block scope : Tương tư function scope
-}
-// console.log(message); //error
-// Tuy nhien
-if (2 > 1) {
-  var message = "Hello"; //
-}
-console.log(message); // "Hello" : var là global scope
-
-// Lexical scope
-let myName2 = "Khang";
-function sayHello() {
-  let message = "Hello";
-  console.log(`${message} ${myName2}`);
-}
-sayHello();
-
-// Closures
-// function con co the truy xuat scope cua function cha
-function sayHello2() {
-  let message = "Hei";
-  function sayHi() {
-    console.log(message);
-  }
-  return sayHi();
-}
-sayHello2();
-
-function sayHello3(message) {
-  return function sayYourName(yourName) {
-    console.log(`${message} ${yourName}`);
-  };
-}
-let hello = sayHello3("Hello");
-hello("Khang"); // "Hello Khang"
+console.log(myName1); // error

@@ -83,4 +83,4 @@ function sayHello3(message) {
   };
 }
 let hello = sayHello3("Hello");
-hello("Khang"); // "Hello Khang"
+hello("Khang");
