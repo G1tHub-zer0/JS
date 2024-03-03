@@ -34,54 +34,31 @@ function timeSince(date) {
     (now.getTime() - new Date(date).getTime()) /
       1000
   );
-  if (seconds < 0) {
-    alert("Your time is invalid");
-  }
   let timer = seconds / 31536000;
   if (timer > 1) {
-    console.log(`${Math.floor(timer)} năm trước`);
-    return;
+    console.log(`${timer} năm trước`);
   }
   timer = seconds / 2678400;
   if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} tháng trước`
-    );
-    return;
+    console.log(`${timer} tháng trước`);
   }
   timer = seconds / 604800;
   if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} tuần trước`
-    );
-    return;
+    console.log(`${timer} tuần trước`);
   }
   timer = seconds / 86400;
   if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} ngày trước`
-    );
-    return;
+    console.log(`${timer} ngày trước`);
   }
   timer = seconds / 3600;
   if (timer > 1) {
-    console.log(`${Math.floor(timer)} giờ trước`);
-    return;
+    console.log(`${timer} giờ trước`);
   }
-  timer = seconds / 60;
+  timer = seconds / 3600;
   if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} phút trước`
-    );
-    return;
+    console.log(`${timer} phút trước`);
   }
-  timer = seconds;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} giây trước`
-    );
-    return;
-  }
+  return `${timer} giây trước`;
 }
 // 1 năm = 365 * 24 * 60 * 60 = 31536000
 // 1 tháng = 31 * 24 * 60 * 60 = 2678400
@@ -89,4 +66,4 @@ function timeSince(date) {
 // 1 ngày = 1 * 24 * 60 * 60 = 86400
 // 1 giờ = 1 * 60 * 60 = 3600
 // 1 phút = 1 * 60 = 60
-timeSince("Thu Mar 03 2024 21:01:00 GMT+0700");
+timeSince("Thu Jan 01 1970 07:00:00 GMT+0700");

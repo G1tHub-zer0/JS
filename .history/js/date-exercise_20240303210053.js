@@ -89,4 +89,4 @@ function timeSince(date) {
 // 1 ngày = 1 * 24 * 60 * 60 = 86400
 // 1 giờ = 1 * 60 * 60 = 3600
 // 1 phút = 1 * 60 = 60
-timeSince("Thu Mar 03 2024 21:01:00 GMT+0700");
+timeSince("Thu May 01 2024 07:00:00 GMT+0700");

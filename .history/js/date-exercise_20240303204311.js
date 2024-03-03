@@ -30,63 +30,9 @@ vừa online 3 phút trước, 3 ngày trước, 2 tháng trước, 30 giây tr�
 // 3
 function timeSince(date) {
   const now = new Date();
-  const seconds = Math.floor(
+  const seconds =
     (now.getTime() - new Date(date).getTime()) /
-      1000
-  );
-  if (seconds < 0) {
-    alert("Your time is invalid");
-  }
-  let timer = seconds / 31536000;
-  if (timer > 1) {
-    console.log(`${Math.floor(timer)} năm trước`);
-    return;
-  }
-  timer = seconds / 2678400;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} tháng trước`
-    );
-    return;
-  }
-  timer = seconds / 604800;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} tuần trước`
-    );
-    return;
-  }
-  timer = seconds / 86400;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} ngày trước`
-    );
-    return;
-  }
-  timer = seconds / 3600;
-  if (timer > 1) {
-    console.log(`${Math.floor(timer)} giờ trước`);
-    return;
-  }
-  timer = seconds / 60;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} phút trước`
-    );
-    return;
-  }
-  timer = seconds;
-  if (timer > 1) {
-    console.log(
-      `${Math.floor(timer)} giây trước`
-    );
-    return;
-  }
+    1000;
+  console.log(seconds);
 }
-// 1 năm = 365 * 24 * 60 * 60 = 31536000
-// 1 tháng = 31 * 24 * 60 * 60 = 2678400
-// 1 tuần = 7 * 24 * 60 * 60 = 604800
-// 1 ngày = 1 * 24 * 60 * 60 = 86400
-// 1 giờ = 1 * 60 * 60 = 3600
-// 1 phút = 1 * 60 = 60
-timeSince("Thu Mar 03 2024 21:01:00 GMT+0700");
+timeSince("Thu Jan 01 1970 07:00:00 GMT+0700");
