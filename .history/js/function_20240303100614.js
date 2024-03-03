@@ -86,15 +86,7 @@ let hello = sayHello3("Hello");
 hello("Khang"); // "Hello Khang"
 
 // Arrow function : Annonymous function
-// let square = function (x) { // Normal function: Anonymous function
-//   return x * x;
-// };
-// square(5); // 25
-
-// Arrow function
-// let square = (x) => {
-//   return x * x;
-// };
-// square(5);
-// Viet rur gon neu chi co 1 dong return
-let square = (x) => x * x;
+let square = function (x) {
+  return x * x;
+};
+say(5);

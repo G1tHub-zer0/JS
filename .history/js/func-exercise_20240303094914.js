@@ -14,22 +14,10 @@ function compare(a = 0, b = 0) {
 // 2. In hoa chu cai dau tien
 function bt2(yourName = "") {
   if (yourName.length === 0) return -1;
-  let fword = yourName
-    .toLowerCase()
+  let fword = yourName.toLowerCase
     .charAt(0)
     .toUpperCase();
-  let bword = yourName.slice(1).toLowerCase();
+  let bword = yourName.slice(1);
   return `${fword}${bword}`;
 }
 console.log(bt2("KHANG"));
-
-// 3. Viết hàm có sử dụng callback (function là parameter của function khác) in ra két quả của hàm compare viết ở trên
-function usecallback(a = 0, b = 0, callback) {
-  let max = compare(a, b);
-  callback(max);
-}
-function printMax(number) {
-  console.log("Max number: " + number);
-}
-
-console.log(usecallback(5, 10, printMax));

@@ -28,8 +28,3 @@ function usecallback(a = 0, b = 0, callback) {
   let max = compare(a, b);
   callback(max);
 }
-function printMax(number) {
-  console.log("Max number: " + number);
-}
-
-console.log(usecallback(5, 10, printMax));
