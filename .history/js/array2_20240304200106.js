@@ -100,11 +100,7 @@ const everyNumber = listNumber.every(
 console.log(everyNumber); //false
 
 //reduce: gom cac phan tu trong mang lai thanh 1
-// reduce((preValue, curValue) => {}, initialize value);
-const totalNumber = listNumber.reduce(
-  (preValue, curValue) => {
-    return preValue + curValue;
-  },
-  0
-);
-console.log(totalNumber); // 78
+// reduce((a, b) => {}, initialize value);
+const totalNumber = listNumber.reduce((a, b) => {
+  return a + b;
+}, 0);

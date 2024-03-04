@@ -68,43 +68,6 @@ console.log(findIndex); // 1
 // neu khong co ket qua -> -1
 
 // map: duyet qua tung phan tu trong mang ma khong lam thay doi mang ban dau
-// vi du: tao ra mot mang moi ma cac gia tri trong mang cu nhan 2
 const listNumber = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 ];
-const listNumberDouble = listNumber.map(
-  (value, index, array) => value * 2
-);
-console.log(listNumberDouble);
-
-// forEach: giong map nhung khong tra ve mang moi va chay lien tuc, Trong trường hợp cần dừng vòng lặp với điều kiện nào đó, ta cần sử dụng các vòng lặp khác như for hoặc while thay thế.
-const listNumberTripple = listNumber.forEach(
-  (value, index, array) => value * 3
-);
-
-//filter: sàng lọc các phần tử để thoả mãn điều kiện nào đó
-const greaterThanThree = listNumber.filter(
-  (value, index, array) => value > 3
-);
-console.log(greaterThanThree);
-
-//some: tra ve true khi thoa man 1 dieu kien nao do va nguoc lai tra ve false khi khong thoa 1 dieu kien nao ca
-const someNumber = listNumber.some(
-  (value, index, array) => value > 3
-);
-console.log(someNumber); //true
-//every: tra ve true khi tat ca deu thoa dieu kien va tra false khi co 1 khong thoa dieu kien
-const everyNumber = listNumber.every(
-  (value, index, array) => value > 3
-);
-console.log(everyNumber); //false
-
-//reduce: gom cac phan tu trong mang lai thanh 1
-// reduce((preValue, curValue) => {}, initialize value);
-const totalNumber = listNumber.reduce(
-  (preValue, curValue) => {
-    return preValue + curValue;
-  },
-  0
-);
-console.log(totalNumber); // 78

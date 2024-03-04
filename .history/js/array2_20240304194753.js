@@ -84,27 +84,6 @@ const listNumberTripple = listNumber.forEach(
 
 //filter: sàng lọc các phần tử để thoả mãn điều kiện nào đó
 const greaterThanThree = listNumber.filter(
-  (value, index, array) => value > 3
+  (value, index, array) => value > 30
 );
 console.log(greaterThanThree);
-
-//some: tra ve true khi thoa man 1 dieu kien nao do va nguoc lai tra ve false khi khong thoa 1 dieu kien nao ca
-const someNumber = listNumber.some(
-  (value, index, array) => value > 3
-);
-console.log(someNumber); //true
-//every: tra ve true khi tat ca deu thoa dieu kien va tra false khi co 1 khong thoa dieu kien
-const everyNumber = listNumber.every(
-  (value, index, array) => value > 3
-);
-console.log(everyNumber); //false
-
-//reduce: gom cac phan tu trong mang lai thanh 1
-// reduce((preValue, curValue) => {}, initialize value);
-const totalNumber = listNumber.reduce(
-  (preValue, curValue) => {
-    return preValue + curValue;
-  },
-  0
-);
-console.log(totalNumber); // 78

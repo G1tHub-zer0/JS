@@ -93,18 +93,8 @@ const someNumber = listNumber.some(
   (value, index, array) => value > 3
 );
 console.log(someNumber); //true
-//every: tra ve true khi tat ca deu thoa dieu kien va tra false khi co 1 khong thoa dieu kien
+//every: tra ve true khi tat ca deu thoa dieu kien va tra false khi cos 1 khong thoa
 const everyNumber = listNumber.every(
   (value, index, array) => value > 3
 );
 console.log(everyNumber); //false
-
-//reduce: gom cac phan tu trong mang lai thanh 1
-// reduce((preValue, curValue) => {}, initialize value);
-const totalNumber = listNumber.reduce(
-  (preValue, curValue) => {
-    return preValue + curValue;
-  },
-  0
-);
-console.log(totalNumber); // 78
