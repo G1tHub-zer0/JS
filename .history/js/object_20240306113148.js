@@ -94,60 +94,12 @@ console.log(newUser3);
 
 // this nó sẽ đề cập tới object gần nhất
 const student2 = {
-  name: "Khang",
-  age: 27,
-  male: true,
-  "last-name": "tuan",
-  hi: function () {
-    console.log(
-      `my name is ${this.name} and i am ${this.age} years old`
-    );
-  },
-  fullName: {
-    name: "Nguyen Quoc Khang",
-  },
-};
-student2.hi();
-
-// optional chaining
-console.log(student2.fullName?.name);
-
-// destructuring object
-// const name = student2.name;
-// const age = student2.age;
-// const male = student2.male;
-// const { name, age, male } = student2;
-// console.log(name, age, male);
-
-// rest parameter object
-const { name, age, male, ...rest } = student2;
-console.log(rest);
-
-// normal function
-// function whatYourInfo(name, age, school) {
-// console.log(name, age, school);
-// }
-// whatYourInfo("evondev", 27, "Cao Thang");
-// whatYourInfo(27, "Cao Thang", "evondev");
-// function with object paremeter
-// function whatYourInfo(obj) {
-//   console.log(obj.name, obj.age, obj.school);
-// }
-// const newObj = {
-//   school: "Cao Thang",
-//   age: 27,
-//   name: "evondev",
-// };
-// whatYourInfo(newObj);
-
-// use destructuring
-
-function whatYourInfo({ name, age, school }) {
-  console.log(name, age, school);
-}
-const newObj = {
-  school: "Cao Thang",
-  age: 27,
-  name: "evondev",
-};
-whatYourInfo(newObj);
+    name: "evondev",
+    age: 27,
+    male: true,
+    "last-name": "tuan",
+    hi: function () {
+    console.log('my name is ${this.name} and i am ${this.age} years old`);
+    },
+    };
+    student2.hi();

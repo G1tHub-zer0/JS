@@ -147,7 +147,7 @@ function whatYourInfo({ name, age, school }) {
 }
 const newObj = {
   school: "Cao Thang",
-  age: 27,
   name: "evondev",
+  age: 27,
 };
 whatYourInfo(newObj);

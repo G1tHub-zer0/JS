@@ -130,20 +130,8 @@ console.log(rest);
 // whatYourInfo("evondev", 27, "Cao Thang");
 // whatYourInfo(27, "Cao Thang", "evondev");
 // function with object paremeter
-// function whatYourInfo(obj) {
-//   console.log(obj.name, obj.age, obj.school);
-// }
-// const newObj = {
-//   school: "Cao Thang",
-//   age: 27,
-//   name: "evondev",
-// };
-// whatYourInfo(newObj);
-
-// use destructuring
-
-function whatYourInfo({ name, age, school }) {
-  console.log(name, age, school);
+function whatYourInfo(obj) {
+  console.log(obj.name, obj.age, obj.school);
 }
 const newObj = {
   school: "Cao Thang",
