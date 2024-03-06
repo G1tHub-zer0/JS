@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form id="calculatorForm">
+        <input type="text" id="operand1" placeholder="Số hạng thứ nhất">
+        <input type="text" id="operand2" placeholder="Số hạng thứ hai"><br>
+        <input type="radio" id="add" name="operation" value="add">
+        <label for="add">Cộng</label>
+        <input type="radio" id="subtract" name="operation" value="subtract">
+        <label for="subtract">Trừ</label>
+        <input type="radio" id="multiply" name="operation" value="multiply">
+        <label for="multiply">Nhân</label>
+        <input type="radio" id="divide" name="operation" value="divide">
+        <label for="divide">Chia</label><br>
+        <button type="button" onclick="calculate()">Tính</button>
+        <button type="button" onclick="resetForm()">Tính lại</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            var operand1 = parseFloat(document.getElementById('operand1').value);
+            var operand2 = parseFloat(document.getElementById('operand2').value);
+            var operation = document.querySelector('input[name="operation"]:checked').value;
+            var result;
+
+            switch (operation) {
+                case 'add':
+                    result = operand1 + operand2;
+                    break;
+                case 'subtract':
+                    result = operand1 - operand2;
+                    break;
+                case 'multiply':
+                    result = operand1 * operand2;
+                    break;
+                case 'divide':
+                    if (operand2 !== 0) {
+                        result = operand1 / operand2;
+                    } else {
+                        result = 'Không thể chia cho 0';
+                    }
+                    break;
+                default:
+                    result = 'Vui lòng chọn phép toán';
+            }
+
+            document.getElementById('result').innerText = 'Kết quả: ' + result;
+        }
+
+        function resetForm() {
+            document.getElementById('operand1').value = '';
+            document.getElementById('operand2').value = '';
+            document.getElementById('result').innerText = '';
+            var radioButtons = document.querySelectorAll('input[name="operation"]');
+            radioButtons.forEach(function (button) {
+                button.checked = false;
+            });
+        }
+    </script>
+</body>
+
+</html>
