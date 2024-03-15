@@ -38,16 +38,9 @@ function handleClick() {
 button.addEventListener(
   "click",
   function (event) {
-    console.log(event.target);
+    console.debug(event.target);
     // event.target: nó sẽ chọn chính xác element mình click tới
     console.log(event.currentTarget);
     // event.currentTarget: nó sẽ chọn phần tử mà mình click
   }
 );
-
-// event.prevenDefault();
-const link = document.querySelector(".link");
-link.addEventListener("click", function (event) {
-  event.preventDefault();
-  console.log("CLick me");
-});

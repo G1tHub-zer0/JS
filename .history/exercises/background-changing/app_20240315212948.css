@@ -51,32 +51,13 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-.counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-}
-.counter-number {
-  font-size: 100px;
-  margin: 0 10px;
-  color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #00aefd,
-    #ff6bcb
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.counter button {
-  width: 40px;
-  height: 40px;
-  background-color: #ccc;
+.change {
+  display: block;
+  padding: 15px 40px;
+  border-radius: 10px;
   border: 0;
   color: white;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 50px auto;
+  background-color: #3d6ef7;
 }
