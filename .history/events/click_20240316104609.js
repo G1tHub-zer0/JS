@@ -49,14 +49,9 @@
 const link = document.querySelector(".link");
 link.addEventListener("click", function (event) {
   event.preventDefault();
-  // console.log("CLick me");
-  // selector.style.property = value;
-  // event.target.style.property = value;
-  // console.log(event.target);
-  // console.log(event.target.style);
-  // event.target.style.color = "red";
-  // Lấy custom attribute data-abc
-  // event.target.dataset.abc
-  const name = event.target.dataset.name;
-  console.log(name);
+  console.log("CLick me");
+  // selector.style
+  // event.target.style
+  console.log(event.target);
+  console.log(event.target.style);
 });

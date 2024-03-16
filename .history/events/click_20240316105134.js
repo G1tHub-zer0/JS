@@ -56,7 +56,6 @@ link.addEventListener("click", function (event) {
   // console.log(event.target.style);
   // event.target.style.color = "red";
   // Lấy custom attribute data-abc
-  // event.target.dataset.abc
-  const name = event.target.dataset.name;
-  console.log(name);
+  // dataset.abc
+  event.target;
 });
